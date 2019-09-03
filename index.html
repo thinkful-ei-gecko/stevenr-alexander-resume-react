@@ -20,37 +20,36 @@
     </script>
     <script type="text/babel">
     
-        const header =
+    function Resume() {
+    return (
+      <div>
         <header>
-            <h1>Sally Student</h1>
-        </header>;
-
-        const contact = function Contact() {
-            return (
-            <section className='contact-info'>
-            <h2>Contact Info</h2>
-                <span> Name: Sally Student </span> 
-                <span> Email: sally@student.com </span>
-                <span><img src='/photo.jpg' /></span>
-            </section>
-            );
-        };
-
-        const education = '';
-        const employment = '';
-        const address = '';
-        
-        const main =
+          <h1>Sally Student</h1>
+        </header>
         <main>
-            < Contact />
-        </main>;
-
+          <address className='contact-info'>
+            <h2>Contact Info</h2>
+            <ul className='contact-info-list'>
+              <li> Name: Sally Student </li> 
+              <li> Email: sally@student.com </li>
+              <li><img src='photo.jpg' /></li>
+            </ul>
+          </address>
+        <section className='employment'>
+          employment stuff.
+        </section>
+        <section className='education'>
+          education stuff.
+        </section>
+        </main>
+      </div>
+      );
+  }
     
-        ReactDOM.render(
-        header,
-        < Contact />,
-        document.querySelector('#application-root')
-    );
+  ReactDOM.render(
+      <Resume />,
+    document.querySelector('#application-root')
+);
     </script>
 </body>
 </html>
