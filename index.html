@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sally Student Resume</title>
+</head>
+<body>
+    <div id="application-root"></div>
+
+    <script
+        src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script
+        src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script
+        src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+    <script type="text/babel">
+    
+        const header =
+        <header>
+            <h1>Sally Student</h1>
+        </header>;
+
+        const contact = function Contact() {
+            return (
+            <section className='contact-info'>
+            <h2>Contact Info</h2>
+                <span> Name: Sally Student </span> 
+                <span> Email: sally@student.com </span>
+                <span><img src='/photo.jpg' /></span>
+            </section>
+            );
+        };
+
+        const education = '';
+        const employment = '';
+        const address = '';
+        
+        const main =
+        <main>
+            < Contact />
+        </main>;
+
+    
+        ReactDOM.render(
+        header,
+        < Contact />,
+        document.querySelector('#application-root')
+    );
+    </script>
+</body>
+</html>
+
+<!--
+- Header, main, section, address
+- contact info with name, email phone picture
+- education section
+- employment section 2 entries; name, job title, dates of employment and desc
+-->
